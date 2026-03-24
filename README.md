@@ -89,26 +89,20 @@ The API returns an array of objects with the following structure:
 
 ## Deployment
 
-This project can be deployed to any static hosting service. Here are instructions for the most common options:
-
-### Vercel
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com) and import the repository
-3. Vercel auto-detects Vite — just click **Deploy**
-
-### Netlify
-
-1. Push your code to GitHub
-2. Go to [netlify.com](https://netlify.com) and import the repository
-3. Set the build command to `npm run build` and the publish directory to `dist`
-4. Click **Deploy**
-
 ### Render
 
-1. Create a new **Static Site** on [render.com](https://render.com)
-2. Connect your GitHub repository
-3. Set the build command to `npm run build` and the publish directory to `dist`
+This project is currently deployed on [Render](https://render.com) as a **Static Site**.
+
+Deployment Steps Applied:
+1. Connected GitHub repository
+2. Set the build command to `npm run build`
+3. Set the publish directory to `dist`
+
+The application is updated automatically when new commits are pushed to the main branch
+
+Public URL:
+
+- https://wordwise-zenc.onrender.com/
 
 ## Project Structure
 
@@ -129,3 +123,26 @@ src/
 ## License
 
 This project was developed for educational purposes as part of the FIAP Front-end Engineering curriculum.
+
+## Métricas Web Vitals aferidas pelo Lighthouse
+
+Data da aferição: 22/03/2026
+
+Métricas avaliadas:
+
+- **Largest Contentful Paint (LCP)**: Tempo que o maior elemento de conteúdo na tela leva para carregar e se tornar visível para o usuário.
+- **First Contentful Paint (FCP)**: Tempo que o navegador leva para renderizar o primeiro conteúdo do DOM, como texto ou imagem.
+- **Cumulative Layout Shift (CLS)**: Mede a quantidade de mudanças inesperadas de layout que ocorrem durante o ciclo de vida da página, impactando a estabilidade visual.
+
+Link do relatório no PageSpeed Insights:
+
+- https://pagespeed.web.dev/analysis/https-wordwise-zenc-onrender-com/4nwoimbgxs?form_factor=desktop
+
+### Prints do relatório:
+
+![Header do relatório Lighthouse](lighthouse_report/report_header.png)
+
+![Relatório Lighthouse - Computador](lighthouse_report/report_computador.png)
+
+![Relatório Lighthouse - Celular](lighthouse_report/report_celular.png)
+
